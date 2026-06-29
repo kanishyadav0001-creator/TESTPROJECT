@@ -1,14 +1,3 @@
-# ============================================================
-# DSCM11L3 — SQL Statements Part 2
-# Activity: Wildlife Park Records Analyzer
-# ============================================================
-
-# ---- PART 1: Build the Database ----
-# This database stores information about animals in a wildlife park.
-# It has three tables: Animal, Keeper, and Animal_Keeper.
-# We will use SQL to sort, count, total, average, and group
-# the data in different ways.
-
 import sqlite3
 import pandas as pd
 
@@ -69,11 +58,6 @@ INSERT INTO Animal_Keeper VALUES
 conn.commit()
 print('Wildlife park database ready!')
 
-# ---- PART 2: DISTINCT — Unique Values Only ----
-# DISTINCT removes duplicate values.
-# It shows each unique value only once.
-
-# All unique animal types in the Animal table
 animal_types = pd.read_sql("""SELECT DISTINCT(Animal_Type)
     FROM Animal;""", conn)
 print(animal_types)

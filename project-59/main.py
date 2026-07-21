@@ -40,7 +40,7 @@ for col in numerical_features:
     sns.histplot(data[col], kde=True)
     plt.show()
 
-plt.figure()
+plt.figure() 
 sns.boxplot(x='gender', y='math score', data=data)
 plt.show()
 

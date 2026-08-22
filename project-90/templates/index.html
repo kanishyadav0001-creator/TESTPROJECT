@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Difference Calculator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Date Difference Calculator</h1>
+        
+        <form action="/" method="POST">
+            
+            <div class="date-section">
+                <h2>Calculate Here:-</h2>
+                <div class="input-group">
+                    <input type="number" name="weight" placeholder="Weight">
+                    <input type="number" name="height" placeholder="Height">
+                    </div>
+            </div>
+
+            <button type="submit" class="submit-btn">BMI</button>
+        </form>
+
+        {% if bmi %}
+        <div class="result-box">
+            <h3>Result:</h3>
+            <p>BMI is <strong>{{ bmi }}</strong> ___</p>
+        </div>
+        {% endif %}
+        
+    </div>
+</body>
+</html>

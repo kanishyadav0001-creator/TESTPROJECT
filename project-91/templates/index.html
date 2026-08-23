@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Vowel Calculator</h1>
+        
+        <!-- Points directly to our main root route -->
+        <form action="/" method="POST">
+            
+            <div class="input-section">
+                <h2>Enter Your Text</h2>
+                <div class="input-group">
+                    <input type="text" name="input_string" placeholder="Type words here..." required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Count Vowels</button>
+        </form>
+
+        <!-- Only renders the result card if number_of_vowels has a value passed from Flask -->
+        {% if number_of_vowels is not none %}
+        <div class="result-box">
+            <h3>Result:</h3>
+            <p>Count of vowels is: <strong>{{ number_of_vowels }}</strong></p>
+        </div>
+        {% endif %}
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body class="resume-body">
+    <!-- Header section -->
+    <header class="resume-header">
+        <span>user</span>
+        <span>1234567890</span>
+        <span>user@user.com</span>
+    </header>
+
+    <div class="resume-content">
+        <!-- Educational Qualifications (Static Example) -->
+        <h3><u>Educational Qualifications</u></h3>
+        <table class="resume-table">
+            <tr>
+                <th>Grade</th>
+                <th>School Name</th>
+                <th>Percentage</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>abc school</td>
+                <td>89%</td>
+                <td>2012</td>
+            </tr>
+        </table>
+
+        <!-- Independent Course -->
+        <h3><u>Independent Course</u></h3>
+        <ul>
+            <li>machine_learning</li>
+        </ul>
+
+        <!-- Hobbies section using Flask Data -->
+        <h3><u>Hobbies:</u></h3>
+        <ul>
+            <li>{{ hobbies }}</li>
+        </ul>
+
+        <!-- Personal Information using Flask Data -->
+        <h3><u>Personal Information:</u></h3>
+        <ul>
+            <li>DOB: {{ dob }}</li>
+            <li>Father Name: {{ father_name }}</li>
+            <li>Mother Name: {{ mother_name }}</li>
+        </ul>
+
+        <!-- Declaration -->
+        <h3><u>Declaration</u></h3>
+        <p class="declaration-text">I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
+    </div>
+</body>
+</html>

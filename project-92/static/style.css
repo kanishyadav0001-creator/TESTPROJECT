@@ -1,0 +1,81 @@
+/* General reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* UI 1 Form Styles */
+.form-container {
+    background-color: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    align-self: center;
+}
+
+.form-group input {
+    padding: 8px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* UI 2 Resume Styles */
+.resume-body {
+    background-color: #e6eed6; /* Light greenish background from image */
+    padding: 0;
+}
+
+.resume-header {
+    background-color: #799a8b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.resume-content {
+    padding: 20px;
+}
+
+.resume-table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: #e1d6c1; /* Tan table background */
+}
+
+.resume-table th, .resume-table td {
+    border: 1px solid #a3a3a3;
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.declaration-text {
+    font-size: 12px;
+}
